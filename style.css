@@ -1,0 +1,380 @@
+/* Polices */
+@font-face {
+    font-family: font1;
+    src: url(./Fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./Fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(./Fonts//Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(./Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: font5;
+    src: url(./Fonts/Montserrat-SemiBold.ttf);
+}
+/* Fin Polices */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    background-color: #23283e;
+    color: #cdcdff;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+    height: 100vh;
+}
+/* Fin Container */
+
+/* ************************************************ */
+/* 1. HEADER */
+/* 2. MAIN */
+/* 3. FOOTER */
+/* ************************************************ */
+
+/* Header */
+header  {
+    grid-area: header;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo {
+    color:#90a0d9;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.span1 {
+    color: #e59863;
+    font-weight: bold;
+}
+
+.lien-navigation {
+    margin-left: 5rem;
+}
+
+.lien-navigation a {
+    color:#90a0d9;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-decoration: none;
+    background: linear-gradient( to top, #e59863 0%, transparent 10%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+}
+
+.lien-navigation a:hover {
+    background-size: 100% 100%;
+}
+/* Fin Header */
+
+/* Main */
+main {
+    grid-area: main;
+}
+
+/* Section-1 */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+}
+
+.titre1 {
+    font-family: 'font1';
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #cdcdff;
+}
+
+.sous-titre {
+    font-family: 'font2';
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #cdcdff;
+}
+
+.contenu {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphe {
+    width: 26rem;
+    display: flex;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-family: font2;
+    line-height: 1.9rem;
+}
+
+.button {
+    background-color: #23283e;
+    color: #cdcdff;
+    font-family: font2;
+    border: 2px solid #90A0D9;
+    padding: 0.5rem;
+    margin-top: 1.6rem;
+    margin-left: 6.5rem;
+}
+
+.section-1-reseaux-sociaux {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 7.7rem;
+    font-size: 2.8rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+    color: #90A0D9;
+}
+
+.ligne {
+    height: 1px;
+    width: 60rem; 
+    background-color: #90A0D9;
+    margin: 1.5rem auto;
+}
+/* Fin Section-1 */
+
+/* section-2 */
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 150rem;
+    padding: 2rem 35rem;
+}
+
+.titre2 {
+    font-size: 2.5rem;
+    font-family: font1;
+    color: #90A0D9;
+    margin-top: 3rem;
+    margin-left: 30rem;
+}
+
+.affiche {
+    padding: 2.5rem;
+    box-shadow: 0.2rem 0rem 1rem 0.2rem #1a1e30;
+    width: 24rem;
+    height: 20rem;
+    font-family: font4;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.description {
+    font-size: 1.3rem;
+}
+
+.code {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.langage-code {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #e59863; 
+}
+
+.second-p {
+    color: #CDCDFF
+}
+
+.section-2-reseaux-sociaux {
+    color: #cdcdff;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 2rem;
+}
+/* Fin section-2 */
+
+/* Section-3 */
+.section-3 {
+    display: flex;
+    justify-content: space-around;
+    color: #90A0D9;
+    margin-bottom: 5rem;
+}
+
+.description-competences {
+    margin-top: 5rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.competences p{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.competences p {
+    margin-left: 2rem;
+}
+
+.puce {
+   color: #e59863; 
+   margin-right: 0.5rem;
+}
+
+/* Fin section-3 */
+
+.connexion-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    background-color: #e59863; 
+    margin-top: 3rem;
+    color: #23283e;
+    font-weight: bold;
+    font-family: font3;
+    padding: 1.5rem;
+    width: 15rem;
+}
+
+.connexion-contact-reseau-sociaux {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 71rem;
+    font-size: 2.8rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: #90A0D9;
+}
+
+/* Formulaire */
+.section-4 {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #90a0d9;
+    font-family: font3;
+}
+
+input {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 30rem;
+    border: 1px solid white;
+    background-color: #23283e;
+    background: linear-gradient( to top, #e59863 0%, transparent 10%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+    cursor: pointer;
+}
+
+input:hover {
+    background-size: 100% 100%;
+    border: #e59863 1.2px solid;
+}
+
+textarea {
+    margin-top: 1rem;
+    width: 30rem;
+    height: 10rem;
+    border: 1px solid white;
+    background-color: #23283e;
+    cursor: pointer;
+    background: linear-gradient( to top, #e59863 0%, transparent 4%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+}
+
+textarea:hover {
+    background-size: 100% 100%;
+    border: #e59863 1.2px solid;
+}
+
+.valider {
+    background-color: #e59863;
+    padding: 0.5rem;
+    width: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    color: #23283e;
+    font-weight: bold;
+}
+
+.identite {
+    margin-right: 30rem;
+}
+
+.identite p:nth-child(1){
+    font-family: font3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.identite p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #90a0d9;
+}
+
+.identite-reseaux-sociaux {
+    display: flex;
+    justify-content: space-around;
+    color: #90a0d9;
+    font-size: 3rem;
+    padding: 1rem;
+}
+/* Fin Formulaire */
+/* Fin Main */
+
+/* Footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+   color: #90A0D9;
+}
+/* Fin Footer */
+
